@@ -1,0 +1,4 @@
+com\bms\services\controler\BankManagemntController.class
+com\bms\services\model\Customer.class
+com\bms\services\BankmanagementServicesApplication.class
+com\bms\services\model\Loan.class
