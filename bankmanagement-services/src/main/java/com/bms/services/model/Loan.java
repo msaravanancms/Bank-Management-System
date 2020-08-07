@@ -1,25 +1,37 @@
 package com.bms.services.model;
 
+
 public class Loan {
+	
+	private long id;
 	private int loanId;
 	private String loanType;
 	private double loanAmount;
 	private String loanDate;
 	private double rateOfInterest;
 	private String durationOfLoan;
+	private int accountNumber;
+	private int customerId;
+	private String accountType;
 	
 	public Loan() {}
 
-	public Loan(int loanId, String loanType, double loanAmount, String loanDate, double rateOfInterest,
-			String durationOfLoan) {
+
+	public Loan(long id, int loanId, String loanType, double loanAmount, String loanDate, double rateOfInterest,
+			String durationOfLoan, int accountNumber, int customerId, String accountType) {
 		super();
+		this.id = id;
 		this.loanId = loanId;
 		this.loanType = loanType;
 		this.loanAmount = loanAmount;
 		this.loanDate = loanDate;
 		this.rateOfInterest = rateOfInterest;
 		this.durationOfLoan = durationOfLoan;
+		this.accountNumber = accountNumber;
+		this.customerId = customerId;
+		this.accountType = accountType;
 	}
+
 
 	public int getLoanId() {
 		return loanId;
@@ -68,5 +80,46 @@ public class Loan {
 	public void setDurationOfLoan(String durationOfLoan) {
 		this.durationOfLoan = durationOfLoan;
 	}
+
+
+	public long getId() {
+		return id;
+	}
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+	
 	
 }

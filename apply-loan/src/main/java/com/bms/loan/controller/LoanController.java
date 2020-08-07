@@ -2,60 +2,48 @@ package com.bms.loan.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
+import javax.validation.Valid;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.bms.loan.exception.CustomerException;
+import com.bms.loan.exception.ResourceNotFoundException;
 import com.bms.loan.model.Customer;
 import com.bms.loan.model.Loan;
-import com.bms.loan.services.CustomerRepository;
-import com.bms.loan.services.LoanRepository;
+import com.bms.loan.repository.LoanRepository;
+import com.bms.loan.services.LoanServices;
+
+import io.swagger.annotations.Api;
 
 @RestController
 @RequestMapping("/loanservice")
+@Api(tags = { "loanservice and REST endpoints" })
 public class LoanController {
 	
-	@Autowired
-	private CustomerRepository customerRepository;
-	@Autowired
-	private LoanRepository loanRepository;
+	private static final Logger logger = LoggerFactory.getLogger(LoanController.class);
 	
-	@PutMapping("/loanService/{id}")
-	  public ResponseEntity<Loan> applyLoan(@PathVariable(value = "id") Long CustomerId, @RequestBody  Loan loanObj){
-	  
-		  Optional<Customer>  cust = customerRepository.findById(CustomerId);
-		  Loan updatedLoan=null;
-		 if(cust.isEmpty()) {
-			 
-		 }else {
-			 Loan loan = new Loan();
-			 loan.setAccountNumber(cust.get().getAccount().getAccountNumber());
-			 loan.setAccountType(cust.get().getAccount().getAccountType());
-			 loan.setCustomerId(cust.get().getCustomerId());
-			 loan.setLoanType(loanObj.getLoanType());
-			 loan.setLoanAmount(loanObj.getLoanAmount());
-			 //loan.setLoanId(loanId);
-			 loan.setLoanDate(loanObj.getLoanDate());
-			 loan.setRateOfInterest(loanObj.getRateOfInterest());
-			     updatedLoan= loanRepository.save(loan);
-			        
-		 }
-		return ResponseEntity.ok(updatedLoan);
-		 }
-		 
+	@Autowired
+	private LoanServices loanServices;
 	
-	@RequestMapping("/{loanId}")
-	public List<Loan> getCustomerList(@PathVariable("loanId")String customerId){
-		 List<Loan> list = new ArrayList();
-		 Loan customer = new Loan();
-		 list.add(customer);
-		return list;
-	}
+	@PostMapping("/applyloan")
+	  public ResponseEntity<Loan> applyLoan(@Valid @RequestBody  Loan loanObj)throws ResourceNotFoundException, CustomerException{
+		try {
+			Loan loan = loanServices.applyLoan(loanObj, loanObj.getCustomerId());
+		
+		}catch(Exception e) {
+			 logger.error("$$$$$$$ The givenLoan ID is already Exist : " + loanObj.getCustomerId());  
+			 throw new ResourceNotFoundException("The givenLoan ID is already Exist d :: " + loanObj.getCustomerId());
+		}
+		return ResponseEntity.ok(loanObj);
+		 }
 
 }

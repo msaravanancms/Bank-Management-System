@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: com.bms.loan.ApplyLoanApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.414 s - in com.bms.loan.ApplyLoanApplicationTests
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.631 s <<< FAILURE! - in com.bms.loan.ApplyLoanApplicationTests
+testMessage  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loanRepository' defined in com.bms.loan.repository.LoanRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext' while setting bean property 'mappingContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaMappingContext': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+Caused by: java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+Caused by: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+

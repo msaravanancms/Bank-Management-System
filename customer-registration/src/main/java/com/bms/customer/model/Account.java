@@ -6,9 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "account")
+@Table(name =  "account", uniqueConstraints = @UniqueConstraint(columnNames = "accountNumber"))
 public class Account {
 
 	@Id
@@ -17,7 +18,7 @@ public class Account {
 	private long id;
 	
 	@Column(name = "customerId")
-	private long customerId;
+	private String customerId;
 	
 	@Column(name = "accountName")
 	private String accountName;
@@ -54,11 +55,11 @@ public class Account {
 		this.id = id;
 	}
 
-	public long getCustomerId() {
+	public String getCustomerId() {
 		return customerId;
 	}
 
-	public void setCustomerId(long customerId) {
+	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
 

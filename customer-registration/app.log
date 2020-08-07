@@ -1,0 +1,935 @@
+2020-08-07 10:47:05,532 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 9800 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 10:47:05,537 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 10:47:07,942 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 10:47:08,097 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 132ms. Found 2 JPA repository interfaces.
+2020-08-07 10:47:09,418 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 10:47:09,438 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 10:47:09,439 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 10:47:09,439 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 10:47:09,796 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 10:47:09,796 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 4171 ms
+2020-08-07 10:47:10,421 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 10:47:10,503 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 10:47:10,623 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 10:47:10,915 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 10:47:10,959 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 10:47:11,142 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 10:47:11,281 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 10:47:11,512 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 10:47:11,546 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 10:47:11,587 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 10:47:13,633 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 10:47:13,651 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 10:47:13,777 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 10:47:13,827 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 10:47:13,829 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 10:47:13,876 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 10:47:13,935 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 10:47:14,295 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 10:47:14,298 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 10:47:14,330 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 10:47:15,132 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 10:47:15,156 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 10.484 seconds (JVM running for 11.564)
+2020-08-07 11:26:20,794 INFO [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 11:26:20,795 INFO [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 11:26:20,820 INFO [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 24 ms
+2020-08-07 11:40:19,863 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 2380 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 11:40:19,873 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 11:40:22,555 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 11:40:22,802 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 213ms. Found 2 JPA repository interfaces.
+2020-08-07 11:40:24,595 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 11:40:24,618 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:40:24,619 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 11:40:24,620 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 11:40:24,913 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 11:40:24,915 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 4939 ms
+2020-08-07 11:40:25,845 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 11:40:25,955 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 11:40:26,098 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 11:40:26,408 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 11:40:26,458 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 11:40:26,677 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 11:40:26,898 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 11:40:27,254 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 11:40:27,276 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 11:40:27,348 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 11:40:29,473 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 11:40:29,496 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 11:40:29,653 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:40:29,685 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2020-08-07 11:40:29,690 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 11:40:29,696 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 11:40:29,699 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 11:40:29,736 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 11:40:29,741 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:40:29,742 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 11:40:29,754 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:40:29,755 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:40:29,776 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 11:40:29,780 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2020-08-07 11:41:01,788 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 13064 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 11:41:01,797 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 11:41:04,440 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 11:41:04,720 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 257ms. Found 2 JPA repository interfaces.
+2020-08-07 11:41:06,365 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 11:41:06,390 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:41:06,391 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 11:41:06,392 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 11:41:06,698 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 11:41:06,699 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 4798 ms
+2020-08-07 11:41:07,561 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 11:41:07,701 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 11:41:07,914 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 11:41:08,401 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 11:41:08,472 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 11:41:08,768 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 11:41:08,976 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 11:41:09,240 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 11:41:09,247 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 11:41:09,298 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 11:41:10,944 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 11:41:10,961 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 11:41:11,112 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 11:41:11,156 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 11:41:11,158 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 11:41:11,200 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 11:41:11,249 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 11:41:11,551 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 11:41:11,555 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 11:41:11,582 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 11:41:12,262 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 11:41:12,282 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 11.456 seconds (JVM running for 12.764)
+2020-08-07 11:42:03,808 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 11:42:03,809 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 11:42:03,828 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 19 ms
+2020-08-07 13:13:22,310 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 2644 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 13:13:22,315 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 13:13:24,341 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 13:13:24,493 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 134ms. Found 2 JPA repository interfaces.
+2020-08-07 13:13:25,691 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 13:13:25,719 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:13:25,720 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 13:13:25,720 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 13:13:26,019 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 13:13:26,020 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3615 ms
+2020-08-07 13:13:26,614 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 13:13:26,705 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 13:13:26,812 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 13:13:27,110 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 13:13:27,156 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 13:13:27,335 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 13:13:27,491 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 13:13:27,774 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 13:13:27,790 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 13:13:27,827 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 13:13:29,508 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 13:13:29,524 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 13:13:29,723 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:13:29,779 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 13:13:29,782 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 13:13:29,838 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 13:13:29,898 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 13:13:30,233 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 13:13:30,238 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 13:13:30,267 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 13:13:30,973 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 13:13:30,997 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 9.467 seconds (JVM running for 10.518)
+2020-08-07 13:14:40,457 INFO [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 13:14:40,458 INFO [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 13:14:40,474 INFO [http-nio-8081-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 16 ms
+2020-08-07 13:26:21,132 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 9928 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 13:26:21,139 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 13:26:23,296 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 13:26:23,429 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 116ms. Found 2 JPA repository interfaces.
+2020-08-07 13:26:24,616 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 13:26:24,648 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:26:24,649 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 13:26:24,649 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 13:26:24,891 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 13:26:24,892 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3666 ms
+2020-08-07 13:26:25,602 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 13:26:25,697 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 13:26:25,796 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 13:26:26,072 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 13:26:26,100 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 13:26:26,294 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 13:26:26,409 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 13:26:26,571 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 13:26:26,591 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 13:26:26,625 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 13:26:27,989 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 13:26:28,004 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 13:26:28,120 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:26:28,165 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 13:26:28,166 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 13:26:28,207 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 13:26:28,252 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 13:26:28,551 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 13:26:28,555 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 13:26:28,580 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 13:26:29,170 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 13:26:29,188 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 8.84 seconds (JVM running for 9.84)
+2020-08-07 13:32:18,009 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 13:32:18,010 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 13:32:18,029 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 19 ms
+2020-08-07 13:36:59,333 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 10276 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 13:36:59,341 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 13:37:01,786 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 13:37:01,972 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 165ms. Found 2 JPA repository interfaces.
+2020-08-07 13:37:03,447 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 13:37:03,476 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:37:03,478 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 13:37:03,478 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 13:37:03,713 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 13:37:03,714 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 4277 ms
+2020-08-07 13:37:04,363 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 13:37:04,461 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 13:37:04,587 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 13:37:04,911 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 13:37:04,982 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 13:37:05,162 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 13:37:05,346 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 13:37:05,539 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 13:37:05,548 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 13:37:05,580 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 13:37:07,133 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 13:37:07,147 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 13:37:07,266 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 13:37:07,313 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 13:37:07,315 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 13:37:07,358 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 13:37:07,413 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 13:37:07,751 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 13:37:07,755 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 13:37:07,782 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 13:37:08,409 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 13:37:08,428 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 9.949 seconds (JVM running for 11.201)
+2020-08-07 13:37:18,797 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 13:37:18,798 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 13:37:18,818 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 20 ms
+2020-08-07 13:37:59,986 ERROR [http-nio-8081-exec-9] c.b.c.c.CustomerController [CustomerController.java:59]  $$$$$$ Customer udate Successflly :: 
+2020-08-07 14:13:44,441 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:308] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bms.customer.CustomerRegistrationApplicationTests], using SpringBootContextLoader
+2020-08-07 14:13:44,459 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] Could not detect default resource locations for test class [com.bms.customer.CustomerRegistrationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-07 14:13:44,461 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] Could not detect default configuration classes for test class [com.bms.customer.CustomerRegistrationApplicationTests]: CustomerRegistrationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-07 14:13:44,711 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:237] Found @SpringBootConfiguration com.bms.customer.CustomerRegistrationApplication for test class com.bms.customer.CustomerRegistrationApplicationTests
+2020-08-07 14:13:44,934 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-07 14:13:44,980 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c6c5427, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@618c5d94, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5b40ceb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13c3c1e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d8062d2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e63ec0b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b956878, org.springframework.test.context.event.EventPublishingTestExecutionListener@36546a22, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@285c08c8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@295eaa7c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3918c187, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c88b9fc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64dafeed, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@388ba540]
+2020-08-07 14:13:45,708 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 9948 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 14:13:45,711 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 14:13:48,298 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 14:13:48,484 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 163ms. Found 2 JPA repository interfaces.
+2020-08-07 14:13:50,532 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 14:13:50,554 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 14:13:50,555 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 14:13:50,556 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 14:13:50,817 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 14:13:50,818 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 5062 ms
+2020-08-07 14:13:51,893 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 14:13:52,036 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 14:13:52,203 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 14:13:52,637 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 14:13:52,895 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 14:13:52,934 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 14:13:53,420 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 14:13:53,465 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 14:13:53,674 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 14:13:54,339 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 14:13:55,707 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 14:13:55,725 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 14:13:56,102 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 14:13:56,213 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 54205 (http) with context path ''
+2020-08-07 14:13:56,216 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 14:13:56,283 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 14:13:56,360 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 14:13:56,727 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 14:13:56,732 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 14:13:56,774 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 14:13:57,734 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 14:13:57,760 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:61] Started CustomerRegistrationApplicationTests in 12.708 seconds (JVM running for 15.105)
+2020-08-07 14:13:59,747 INFO [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 14:13:59,755 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 14:13:59,759 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 14:13:59,852 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 14:17:03,592 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:308] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bms.customer.CustomerRegistrationApplicationTests], using SpringBootContextLoader
+2020-08-07 14:17:03,612 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] Could not detect default resource locations for test class [com.bms.customer.CustomerRegistrationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-07 14:17:03,614 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] Could not detect default configuration classes for test class [com.bms.customer.CustomerRegistrationApplicationTests]: CustomerRegistrationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-07 14:17:03,871 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:237] Found @SpringBootConfiguration com.bms.customer.CustomerRegistrationApplication for test class com.bms.customer.CustomerRegistrationApplicationTests
+2020-08-07 14:17:04,114 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-07 14:17:04,159 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c6c5427, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@618c5d94, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5b40ceb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13c3c1e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1d8062d2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e63ec0b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3b956878, org.springframework.test.context.event.EventPublishingTestExecutionListener@36546a22, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@285c08c8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@295eaa7c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3918c187, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c88b9fc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@64dafeed, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@388ba540]
+2020-08-07 14:17:05,040 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 4568 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 14:17:05,041 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 14:17:07,878 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 14:17:08,160 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 218ms. Found 2 JPA repository interfaces.
+2020-08-07 14:17:10,123 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 14:17:10,149 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 14:17:10,151 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 14:17:10,152 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 14:17:10,433 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 14:17:10,434 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 5340 ms
+2020-08-07 14:17:11,603 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 14:17:11,749 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 14:17:11,928 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 14:17:12,370 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 14:17:12,666 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 14:17:12,667 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 14:17:12,996 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 14:17:13,036 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 14:17:13,269 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 14:17:13,733 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 14:17:14,798 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 14:17:14,819 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 14:17:15,179 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 14:17:15,228 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 54286 (http) with context path ''
+2020-08-07 14:17:15,230 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 14:17:15,284 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 14:17:15,343 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 14:17:15,683 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 14:17:15,688 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 14:17:15,719 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 14:17:16,468 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 14:17:16,493 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:61] Started CustomerRegistrationApplicationTests in 12.249 seconds (JVM running for 14.747)
+2020-08-07 14:17:17,087 INFO [http-nio-auto-1-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 14:17:17,088 INFO [http-nio-auto-1-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 14:17:17,141 INFO [http-nio-auto-1-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 53 ms
+2020-08-07 14:17:17,680 ERROR [http-nio-auto-1-exec-2] c.b.c.c.CustomerController [CustomerController.java:54]  $$$$$$ Customer ID already Exis :: 88889
+2020-08-07 14:17:17,681 ERROR [http-nio-auto-1-exec-2] c.b.c.c.CustomerController [CustomerController.java:63]  $$$$$$ Exception :: com.bms.customer.exception.CustomerException: Customer ID already Exis :: 88889
+2020-08-07 14:17:17,960 INFO [SpringContextShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 14:17:17,970 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 14:17:17,973 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 14:17:18,069 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 17:21:58,862 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 14796 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:21:58,866 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:22:00,982 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:22:01,138 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 140ms. Found 2 JPA repository interfaces.
+2020-08-07 17:22:02,522 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 17:22:02,543 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 17:22:02,544 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:22:02,544 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:22:02,770 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:22:02,770 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3832 ms
+2020-08-07 17:22:03,342 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:22:03,420 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:22:03,529 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 17:22:03,781 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 17:22:03,805 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:22:03,970 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 17:22:04,071 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:22:04,214 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:22:04,261 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 17:22:04,293 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:22:04,425 INFO [task-1] o.h.e.b.i.EnversServiceImpl [EnversServiceImpl.java:92] Envers integration enabled? : true
+2020-08-07 17:22:04,674 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:22:04,710 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:22:04,711 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:22:04,713 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:22:04,714 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 17:22:04,754 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 17:22:04,762 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 17:22:04,782 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 17:22:04,787 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+
+The following method did not exist:
+
+    org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+
+The method's class, org.hibernate.internal.util.xml.XMLHelper, is available from the following locations:
+
+    jar:file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar!/org/hibernate/internal/util/xml/XMLHelper.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.hibernate.internal.util.xml.XMLHelper: file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.hibernate.internal.util.xml.XMLHelper
+
+2020-08-07 17:23:08,352 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:308] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bms.customer.CustomerRegistrationApplicationTests], using SpringBootContextLoader
+2020-08-07 17:23:08,370 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] Could not detect default resource locations for test class [com.bms.customer.CustomerRegistrationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-07 17:23:08,371 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] Could not detect default configuration classes for test class [com.bms.customer.CustomerRegistrationApplicationTests]: CustomerRegistrationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-07 17:23:08,567 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:237] Found @SpringBootConfiguration com.bms.customer.CustomerRegistrationApplication for test class com.bms.customer.CustomerRegistrationApplicationTests
+2020-08-07 17:23:08,741 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-07 17:23:08,773 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c9f0a20, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55787112, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cd201a8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7db82169, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1992eaf4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f74e835, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3276732, org.springframework.test.context.event.EventPublishingTestExecutionListener@3f28bd56, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@31e3250d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19fe4644, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@21d8bcbe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5be067de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7383eae2, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@18245eb0]
+2020-08-07 17:23:09,256 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 13568 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:23:09,258 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:23:11,167 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:23:11,294 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 113ms. Found 2 JPA repository interfaces.
+2020-08-07 17:23:12,520 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 17:23:12,538 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 17:23:12,540 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:23:12,540 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:23:12,753 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:23:12,754 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3465 ms
+2020-08-07 17:23:13,627 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:23:13,784 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:23:13,978 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 17:23:14,514 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 17:23:14,747 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:23:14,826 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 17:23:15,164 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 17:23:15,196 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:23:15,265 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:23:15,351 INFO [task-1] o.h.e.b.i.EnversServiceImpl [EnversServiceImpl.java:92] Envers integration enabled? : true
+2020-08-07 17:23:15,610 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:23:16,408 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:23:16,413 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:23:16,414 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:23:16,415 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:23:16,418 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 17:23:16,451 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 17:23:16,457 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 17:23:16,478 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 17:23:16,483 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+
+The following method did not exist:
+
+    org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+
+The method's class, org.hibernate.internal.util.xml.XMLHelper, is available from the following locations:
+
+    jar:file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar!/org/hibernate/internal/util/xml/XMLHelper.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.hibernate.internal.util.xml.XMLHelper: file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.hibernate.internal.util.xml.XMLHelper
+
+2020-08-07 17:23:16,532 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 13568 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:23:16,533 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:23:17,103 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:23:17,137 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 32ms. Found 2 JPA repository interfaces.
+2020-08-07 17:23:17,428 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 17:23:17,429 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-2"]
+2020-08-07 17:23:17,430 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:23:17,431 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:23:17,470 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:23:17,471 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 934 ms
+2020-08-07 17:23:17,850 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:23:17,881 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:23:17,901 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2020-08-07 17:23:17,910 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2020-08-07 17:23:17,911 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:23:17,918 INFO [task-1] o.h.e.b.i.EnversServiceImpl [EnversServiceImpl.java:92] Envers integration enabled? : true
+2020-08-07 17:23:18,178 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:23:18,446 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:23:18,648 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:23:18,972 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:23:18,975 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:23:18,976 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:23:18,977 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:23:18,980 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2020-08-07 17:23:19,000 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2020-08-07 17:23:19,003 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 17:23:19,017 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 17:23:19,019 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+
+The following method did not exist:
+
+    org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+
+The method's class, org.hibernate.internal.util.xml.XMLHelper, is available from the following locations:
+
+    jar:file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar!/org/hibernate/internal/util/xml/XMLHelper.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.hibernate.internal.util.xml.XMLHelper: file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.hibernate.internal.util.xml.XMLHelper
+
+2020-08-07 17:23:19,024 ERROR [main] o.s.t.c.TestContextManager [TestContextManager.java:248] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7db82169] to prepare test instance [com.bms.customer.CustomerRegistrationApplicationTests@118f2486]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 66 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.getNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:553)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.invokeProxyMethod(AbstractEntityManagerFactoryBean.java:497)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$ManagedEntityManagerFactoryInvocationHandler.invoke(AbstractEntityManagerFactoryBean.java:680)
+	at com.sun.proxy.$Proxy98.unwrap(Unknown Source)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.bindEntityManagerFactoryToRegistry(HibernateMetricsAutoConfiguration.java:67)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.lambda$bindEntityManagerFactoriesToRegistry$0(HibernateMetricsAutoConfiguration.java:60)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.bindEntityManagerFactoriesToRegistry(HibernateMetricsAutoConfiguration.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 84 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+	at org.hibernate.envers.boot.internal.AdditionalJaxbMappingProducerImpl.produceAdditionalMappings(AdditionalJaxbMappingProducerImpl.java:101)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:296)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-07 17:24:37,065 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:308] Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.bms.customer.CustomerRegistrationApplicationTests], using SpringBootContextLoader
+2020-08-07 17:24:37,080 INFO [main] o.s.t.c.s.AbstractContextLoader [AbstractContextLoader.java:264] Could not detect default resource locations for test class [com.bms.customer.CustomerRegistrationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-08-07 17:24:37,082 INFO [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils [AnnotationConfigContextLoaderUtils.java:83] Could not detect default configuration classes for test class [com.bms.customer.CustomerRegistrationApplicationTests]: CustomerRegistrationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-08-07 17:24:37,242 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [SpringBootTestContextBootstrapper.java:237] Found @SpringBootConfiguration com.bms.customer.CustomerRegistrationApplication for test class com.bms.customer.CustomerRegistrationApplicationTests
+2020-08-07 17:24:37,392 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:248] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-08-07 17:24:37,421 INFO [main] o.s.b.t.c.SpringBootTestContextBootstrapper [AbstractTestContextBootstrapper.java:177] Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1cd201a8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7db82169, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1992eaf4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f74e835, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3276732, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f28bd56, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@31e3250d, org.springframework.test.context.event.EventPublishingTestExecutionListener@19fe4644, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@21d8bcbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5be067de, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7383eae2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@18245eb0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7c7d3c46, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@24fb6a80]
+2020-08-07 17:24:37,861 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 12624 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:24:37,862 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:24:39,473 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:24:39,612 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 126ms. Found 2 JPA repository interfaces.
+2020-08-07 17:24:40,706 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 17:24:40,723 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-08-07 17:24:40,724 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:24:40,724 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:24:40,904 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:24:40,906 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3011 ms
+2020-08-07 17:24:41,592 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:24:41,671 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:24:41,805 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 17:24:42,119 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 17:24:42,277 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:24:42,311 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 17:24:42,571 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 17:24:42,600 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:24:42,703 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:24:42,725 INFO [task-1] o.h.e.b.i.EnversServiceImpl [EnversServiceImpl.java:92] Envers integration enabled? : true
+2020-08-07 17:24:42,974 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:24:43,672 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:24:43,676 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:24:43,678 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:24:43,679 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:24:43,680 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2020-08-07 17:24:43,706 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2020-08-07 17:24:43,712 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 17:24:43,730 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 17:24:43,737 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+
+The following method did not exist:
+
+    org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+
+The method's class, org.hibernate.internal.util.xml.XMLHelper, is available from the following locations:
+
+    jar:file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar!/org/hibernate/internal/util/xml/XMLHelper.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.hibernate.internal.util.xml.XMLHelper: file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.hibernate.internal.util.xml.XMLHelper
+
+2020-08-07 17:24:43,786 INFO [main] c.b.c.CustomerRegistrationApplicationTests [StartupInfoLogger.java:55] Starting CustomerRegistrationApplicationTests on ctsjcloud142 with PID 12624 (started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:24:43,788 INFO [main] c.b.c.CustomerRegistrationApplicationTests [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:24:44,348 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:24:44,377 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 28ms. Found 2 JPA repository interfaces.
+2020-08-07 17:24:44,618 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 0 (http)
+2020-08-07 17:24:44,619 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-auto-2"]
+2020-08-07 17:24:44,621 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:24:44,621 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:24:44,661 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:24:44,662 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 867 ms
+2020-08-07 17:24:44,996 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:24:45,022 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:24:45,037 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2020-08-07 17:24:45,043 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2020-08-07 17:24:45,044 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:24:45,055 INFO [task-1] o.h.e.b.i.EnversServiceImpl [EnversServiceImpl.java:92] Envers integration enabled? : true
+2020-08-07 17:24:45,298 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:24:45,496 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:24:45,666 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:24:45,992 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:559] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:24:45,996 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:598] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:24:45,997 WARN [main] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:267] Invocation of destroy method failed on bean with name 'entityManagerFactory': java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+2020-08-07 17:24:45,997 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:24:45,998 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2020-08-07 17:24:46,013 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2020-08-07 17:24:46,016 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2020-08-07 17:24:46,030 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-07 17:24:46,031 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+
+The following method did not exist:
+
+    org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+
+The method's class, org.hibernate.internal.util.xml.XMLHelper, is available from the following locations:
+
+    jar:file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar!/org/hibernate/internal/util/xml/XMLHelper.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.hibernate.internal.util.xml.XMLHelper: file:/C:/Users/javacloudmc136/.m2/repository/org/hibernate/hibernate-core/5.4.18.Final/hibernate-core-5.4.18.Final.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.hibernate.internal.util.xml.XMLHelper
+
+2020-08-07 17:24:46,036 ERROR [main] o.s.t.c.TestContextManager [TestContextManager.java:248] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@f74e835] to prepare test instance [com.bms.customer.CustomerRegistrationApplicationTests@4806fbf7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	... 66 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to asynchronously initialize native EntityManagerFactory: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.getNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:553)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.invokeProxyMethod(AbstractEntityManagerFactoryBean.java:497)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean$ManagedEntityManagerFactoryInvocationHandler.invoke(AbstractEntityManagerFactoryBean.java:680)
+	at com.sun.proxy.$Proxy98.unwrap(Unknown Source)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.bindEntityManagerFactoryToRegistry(HibernateMetricsAutoConfiguration.java:67)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.lambda$bindEntityManagerFactoriesToRegistry$0(HibernateMetricsAutoConfiguration.java:60)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.boot.actuate.autoconfigure.metrics.orm.jpa.HibernateMetricsAutoConfiguration.bindEntityManagerFactoriesToRegistry(HibernateMetricsAutoConfiguration.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 84 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.hibernate.internal.util.xml.XMLHelper.<init>(Lorg/hibernate/boot/registry/classloading/spi/ClassLoaderService;)V
+	at org.hibernate.envers.boot.internal.EnversServiceImpl.initialize(EnversServiceImpl.java:116)
+	at org.hibernate.envers.boot.internal.AdditionalJaxbMappingProducerImpl.produceAdditionalMappings(AdditionalJaxbMappingProducerImpl.java:101)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:296)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-07 17:28:53,763 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 10252 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 17:28:53,771 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 17:28:55,912 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 17:28:56,181 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 229ms. Found 2 JPA repository interfaces.
+2020-08-07 17:28:57,570 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 17:28:57,594 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 17:28:57,596 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 17:28:57,596 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 17:28:57,832 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 17:28:57,833 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3976 ms
+2020-08-07 17:28:58,426 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 17:28:58,506 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 17:28:58,624 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 17:28:58,934 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 17:28:58,959 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 17:28:59,187 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 17:28:59,352 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 17:28:59,560 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 17:28:59,585 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 17:28:59,620 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 17:29:01,405 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 17:29:01,422 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 17:29:01,571 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 17:29:01,620 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 17:29:01,622 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 17:29:01,677 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 17:29:01,737 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 17:29:02,153 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 17:29:02,157 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 17:29:02,191 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 17:29:02,914 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 17:29:02,936 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 9.808 seconds (JVM running for 10.641)
+2020-08-07 17:29:43,908 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 17:29:43,909 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 17:29:43,925 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 16 ms
+2020-08-07 17:31:45,956 ERROR [http-nio-8081-exec-1] c.b.c.c.CustomerController [CustomerController.java:59]  $$$$$$ Customer udate Successflly :: 
+2020-08-07 17:40:41,108 ERROR [http-nio-8081-exec-2] c.b.c.c.CustomerController [CustomerController.java:54]  $$$$$$ Customer ID already Exis :: 55582292
+2020-08-07 17:40:41,109 ERROR [http-nio-8081-exec-2] c.b.c.c.CustomerController [CustomerController.java:63]  $$$$$$ Exception :: com.bms.customer.exception.CustomerException: Customer ID already Exis :: 55582292
+2020-08-07 18:12:15,129 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:55] Starting CustomerRegistrationApplication on ctsjcloud142 with PID 10684 (C:\Users\javacloudmc136\Downloads\customer-registration\target\classes started by javacloudmc136 in C:\Users\javacloudmc136\Downloads\customer-registration)
+2020-08-07 18:12:15,134 INFO [main] c.b.c.CustomerRegistrationApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2020-08-07 18:12:16,952 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:127] Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-07 18:12:17,071 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:187] Finished Spring Data repository scanning in 103ms. Found 2 JPA repository interfaces.
+2020-08-07 18:12:18,131 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8081 (http)
+2020-08-07 18:12:18,152 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8081"]
+2020-08-07 18:12:18,154 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2020-08-07 18:12:18,154 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-07 18:12:18,366 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2020-08-07 18:12:18,367 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 3163 ms
+2020-08-07 18:12:18,917 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-07 18:12:18,991 INFO [task-1] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-07 18:12:19,078 INFO [task-1] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.18.Final
+2020-08-07 18:12:19,309 INFO [task-1] o.h.a.c.Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-07 18:12:19,349 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:220] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-07 18:12:19,499 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2020-08-07 18:12:19,629 INFO [main] o.s.b.a.e.w.EndpointLinksResolver [EndpointLinksResolver.java:58] Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-07 18:12:19,757 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java:69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-07 18:12:19,772 INFO [task-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2020-08-07 18:12:19,803 INFO [task-1] o.h.d.Dialect [Dialect.java:172] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-08-07 18:12:20,995 INFO [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-07 18:12:21,008 INFO [task-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:416] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-07 18:12:21,116 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8081"]
+2020-08-07 18:12:21,156 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8081 (http) with context path ''
+2020-08-07 18:12:21,158 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:160] Context refreshed
+2020-08-07 18:12:21,214 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java:163] Found 1 custom documentation plugin(s)
+2020-08-07 18:12:21,283 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java:41] Scanning for api listing references
+2020-08-07 18:12:21,553 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_1
+2020-08-07 18:12:21,557 INFO [main] s.d.s.w.r.o.CachingOperationNameGenerator [CachingOperationNameGenerator.java:40] Generating unique operation named: handleUsingGET_2
+2020-08-07 18:12:21,577 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:49] Triggering deferred initialization of Spring Data repositories…
+2020-08-07 18:12:22,130 INFO [main] o.s.d.r.c.DeferredRepositoryInitializationListener [DeferredRepositoryInitializationListener.java:53] Spring Data repositories initialized!
+2020-08-07 18:12:22,146 INFO [main] c.b.c.CustomerRegistrationApplication [StartupInfoLogger.java:61] Started CustomerRegistrationApplication in 7.656 seconds (JVM running for 8.593)
+2020-08-07 18:13:12,459 INFO [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-07 18:13:12,460 INFO [http-nio-8081-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2020-08-07 18:13:12,473 INFO [http-nio-8081-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 13 ms

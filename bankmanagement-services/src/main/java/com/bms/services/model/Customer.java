@@ -1,6 +1,8 @@
 package com.bms.services.model;
 
 public class Customer {
+	
+	private long id;
 	private int customerId;
 	private String customerName;
 	private String password;
@@ -8,11 +10,13 @@ public class Customer {
 	private String email;
 	private String state;
 	private String country;
+	Account account;
 	
 	public Customer() {}
-	public Customer(int customerId, String customerName, String password, String address, String email, String state,
+	public Customer(long id, int customerId, String customerName, String password, String address, String email, String state,
 			String country) {
 		super();
+		this.id=id;
 		this.customerId = customerId;
 		this.customerName = customerName;
 		this.password = password;
@@ -22,6 +26,12 @@ public class Customer {
 		this.country = country;
 	}
 	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -63,6 +73,12 @@ public class Customer {
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+	public Account getAccount() {
+		return account;
+	}
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 	
 	

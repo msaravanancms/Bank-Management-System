@@ -1,2 +1,15 @@
-com\bms\loan\ApplyLoanApplication.class
+com\bms\loan\services\AccountRepository.class
+com\bms\loan\exception\ExceptionHandlerControllerAdvice.class
+com\bms\loan\repository\CustomerRepository.class
+com\bms\loan\ApplicationConfig.class
+com\bms\loan\repository\LoanRepository.class
+com\bms\loan\model\Account.class
 com\bms\loan\controller\LoanController.class
+com\bms\loan\services\LoanServices.class
+com\bms\loan\services\LoanServiceImpl.class
+com\bms\loan\exception\CustomerException.class
+com\bms\loan\model\Customer.class
+com\bms\loan\model\Loan.class
+com\bms\loan\exception\ResourceNotFoundException.class
+com\bms\loan\ApplyLoanApplication.class
+com\bms\loan\exception\ExceptionResponse.class

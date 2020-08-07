@@ -6,10 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "loan")
-public class Loan {
+@Table(name =  "loan", uniqueConstraints = @UniqueConstraint(columnNames = "loanId"))
+public class Loan  {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +31,7 @@ public class Loan {
 	@Column(name = "accountNumber")
 	private int accountNumber;
 	@Column(name = "customerId")
-	private int customerId;
+	private String customerId;
 	@Column(name = "accountType")
 	private String accountType;
 	
@@ -38,7 +39,7 @@ public class Loan {
 
 
 	public Loan(long id, int loanId, String loanType, double loanAmount, String loanDate, double rateOfInterest,
-			String durationOfLoan, int accountNumber, int customerId, String accountType) {
+			String durationOfLoan, int accountNumber, String customerId, String accountType) {
 		super();
 		this.id = id;
 		this.loanId = loanId;
@@ -122,12 +123,12 @@ public class Loan {
 	}
 
 
-	public int getCustomerId() {
+	public String getCustomerId() {
 		return customerId;
 	}
 
 
-	public void setCustomerId(int customerId) {
+	public void setCustomerId(String customerId) {
 		this.customerId = customerId;
 	}
 
