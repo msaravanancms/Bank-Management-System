@@ -1,4 +1,6 @@
+com\bms\customer\audit\Auditable.class
 com\bms\customer\exception\ResourceNotFoundException.class
+com\bms\customer\audit\AuditorAwareImpl.class
 com\bms\customer\controller\CustomerController.class
 com\bms\customer\model\Customer.class
 com\bms\customer\exception\ExceptionResponse.class

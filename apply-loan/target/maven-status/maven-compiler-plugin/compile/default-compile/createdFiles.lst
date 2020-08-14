@@ -9,7 +9,9 @@ com\bms\loan\services\LoanServices.class
 com\bms\loan\services\LoanServiceImpl.class
 com\bms\loan\exception\CustomerException.class
 com\bms\loan\model\Customer.class
+com\bms\loan\audit\Auditable.class
 com\bms\loan\model\Loan.class
 com\bms\loan\exception\ResourceNotFoundException.class
 com\bms\loan\ApplyLoanApplication.class
+com\bms\loan\audit\AuditorAwareImpl.class
 com\bms\loan\exception\ExceptionResponse.class

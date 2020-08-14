@@ -8,9 +8,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import org.hibernate.envers.Audited;
+
+import com.bms.loan.audit.Auditable;
+
+
 @Entity
 @Table(name =  "loan", uniqueConstraints = @UniqueConstraint(columnNames = "loanId"))
-public class Loan  {
+@Audited
+public class Loan  extends Auditable<String> {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
