@@ -1,0 +1,17 @@
+package com.bms.customer.repository;
+
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bms.customer.model.Customer;
+
+
+public interface CustomerRepository extends JpaRepository<Customer, Long>{
+	//@Async
+	//@Query("SELECT * FROM Customer c WHERE c.customerId=:customerId")
+	 // List<Customer>  findByCustomerId(@Param("customerId") Integer customerId );
+	//public Customer createCustomer(Customer customerObj);
+	public Customer findByCustomerId(String customerId);
+}

@@ -41,7 +41,6 @@ public class LoanServiceImpl implements LoanServices{
 				 
 			 }else {
 				 Loan loan=new Loan();
-				 System.out.println("ccccccccccccccccccc:"+cust.get(0).getCustomerName());
 				 loan.setAccountNumber(cust.get(0).getAccount().getAccountNumber());
 				 loan.setAccountType(cust.get(0).getAccount().getAccountType());
 				 loan.setCustomerId(cust.get(0).getCustomerId());

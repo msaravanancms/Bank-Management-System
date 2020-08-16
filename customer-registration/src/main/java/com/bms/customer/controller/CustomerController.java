@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,28 +45,27 @@ public class CustomerController {
 			@ApiResponse(code = 500, message = "Internal Server Error") })
 
 	@PutMapping("/customerObj/{id}")
-	public ResponseEntity<Customer> updateCustomer(@PathVariable(value = "id") String customerId,
+	public ResponseEntity<String> updateCustomer(@PathVariable(value = "id") String customerId,
 			@RequestBody Customer customerObj) throws ResourceNotFoundException, CustomerException {
-		Customer updatedUser = null;
 
 		try {
 			List<Customer> custOb = customerServices.getCustomerList(customerObj.getCustomerId());
 			if (custOb.isEmpty()) {
-				logger.error(" $$$$$$ Customer ID already Exis :: " + customerObj.getCustomerId());
-				throw new CustomerException("Customer ID already Exis :: " + customerObj.getCustomerId());
+				logger.error(HttpStatus.NOT_FOUND+">>"+"$$$$$$ Customer ID not found");
+				 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Customer ID : " + customerObj.getCustomerId() +" not found");
 			} else {
 
-				updatedUser = customerServices.updateCustomer(customerObj, custOb.get(0).getId());
-				logger.error(" $$$$$$ Customer udate Successflly :: " );
+				customerServices.updateCustomer(customerObj, custOb.get(0).getId());
+				logger.info(" $$$$$$ Customer udated Successflly :: " );
 			}
 
 		} catch (Exception e) {
 			logger.error(" $$$$$$ Exception :: "+e );
-			throw new ResourceNotFoundException("Customer ID not found :: " + customerObj.getCustomerId());
+			throw new ResourceNotFoundException("Exception in Customer update :: " + e +""+HttpStatus.BAD_REQUEST);
 		}
 
-		return ResponseEntity.ok(updatedUser);
-
+		return ResponseEntity.status(HttpStatus.CREATED).body("$$$$$$$$ Customer udated Successflly");
+		
 	}
-
-}
+	}
+	
