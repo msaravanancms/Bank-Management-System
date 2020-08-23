@@ -37,5 +37,6 @@ public class LambdaHandler implements RequestStreamHandler {
             throws IOException {
     	//logger.info("handleRequest");
         handler.proxyStream(inputStream, outputStream, context);
+        outputStream.close();
     }
 }

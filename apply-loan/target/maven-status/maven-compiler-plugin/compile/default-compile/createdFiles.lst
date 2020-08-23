@@ -1,6 +1,5 @@
 com\bms\loan\services\AccountRepository.class
 com\bms\loan\LambdaHandler.class
-com\bms\loan\exception\ExceptionHandlerControllerAdvice.class
 com\bms\loan\repository\CustomerRepository.class
 com\bms\loan\ApplicationConfig.class
 com\bms\loan\repository\LoanRepository.class

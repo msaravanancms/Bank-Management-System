@@ -20,7 +20,6 @@ import com.bms.loan.services.LoanServices;
 import io.swagger.annotations.Api;
 
 @RestController
-@RequestMapping("/loanservice")
 @Api(tags = { "loanservice and REST endpoints" })
 public class LoanController {
 	
@@ -30,14 +29,16 @@ public class LoanController {
 	private LoanServices loanServices;
 	
 	@PostMapping("/applyloan")
-	  public ResponseEntity<String> applyLoan(@Valid @RequestBody  Loan loanObj)throws ResourceNotFoundException, CustomerException{
+	  public ResponseEntity<String> applyLoan(@Valid @RequestBody  Loan loanObj)throws CustomerException{
+		logger.info("$$$$$$$$ Loan Method");
 		try {
 			Loan loan = loanServices.applyLoan(loanObj, loanObj.getCustomerId());
 		
 		}catch(Exception e) {
-			 logger.error("$$$$$$$ The givenLoan ID is already Exist : " + loanObj.getCustomerId());  
-			 throw new ResourceNotFoundException("The given Loan ID is already Exist d :: " + loanObj.getCustomerId());
+			logger.error(""+HttpStatus.NOT_FOUND);
+			 return ResponseEntity.status(HttpStatus.NOT_FOUND).body("$$$$$$$$"+ e);
 		}
+		logger.info("$$$$$$$$ Loan Creaed Successfully"+loanObj.getLoanId());
 		return ResponseEntity.status(HttpStatus.CREATED).body("$$$$$$$$ Loan Creaed Successfully");
 		 }
 
